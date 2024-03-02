@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+.portfolio-container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+
+}
+.navlist{
+    display: flex;
+    gap: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    position: fixed;
+}
+.navlist li{
+    list-style: none;
+}
+.navlist li :hover{
+    text-decoration: underline;
+}
+.navlist li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #fff;
+}
+.left-container{
+background: rgb(34, 34, 34);
+width: 70%;
+padding-left: 3rem;
+
+}
+.right-container{
+background: linear-gradient(-45deg, #3877ff ,#252525 70% );
+width: 30%;
+}
+.left-container, .right-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+}
+.icons .fa-brands{
+    color: lightgray;
+    font-size: 1.7rem;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.content {
+    margin-left: 4rem;
+}
+.content .intro{
+    font-size: 1.5rem;
+    color: #fff;
+}
+.content .intro span{
+    color: rgb(0, 255, 255);
+}
+.content h1{
+    font-size: 4rem;
+    color: rgb(0, 255, 255);
+}
+.content .details{
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 38rem;
+    margin: 1.1rem 0 3rem 0;
+    line-height: 1.8rem;
+}
+.btn-container button{
+    border: .1rem solid rgb(5, 253, 253);
+    font-size: 1.1rem;
+    padding: .8rem 1.5rem ;
+    border-radius: .5rem;
+
+}
+button:nth-child(1){
+    background-color: aqua;
+    
+}
+button:nth-child(2){
+    background-color:transparent;
+    margin-left: 2rem;
+    color: #fff;
+}
+button:nth-child(1):hover{
+    background: transparent;
+    color: blue;
+}
+
+button:nth-child(2):hover{
+    background: aqua;
+    color: black;
+}
+.icons .fa-brands:hover{
+    cursor: pointer;
+    transform: rotatey(50deg);
+    color: aquamarine;
+}
+.design .circle{
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+
+}
+#first-circle{
+    background: linear-gradient(90deg,transparent, #252525 -50%);
+    width: 38rem;
+}
+#second-circle{
+    width: 30rem;
+    background-image: url(myimg/Myportfolio.jpg);
+    background-size: cover;
+    border: 1rem solid  aqua;
+    box-shadow: 0 0 1rem #fff,inset 0 0 1rem #fff,
+     0 0 2rem #3877ff,inset 0 0 2rem #3877ff,
+     0 0 4rem #3877ff
+
+}
